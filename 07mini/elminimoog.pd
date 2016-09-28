@@ -1,0 +1,65 @@
+#N canvas 206 23 1024 687 16;
+#X floatatom 98 7 5 0 0 0 - - -, f 5;
+#X obj 704 908 dac~;
+#X obj 106 53 oscbank1;
+#X obj 448 55 oscbank2;
+#X obj 288 355 filterbank1;
+#X obj 287 -287 key;
+#X obj 292 -142 mtof;
+#X floatatom 343 -193 5 0 0 0 - - -, f 5;
+#X floatatom 369 -252 5 0 0 0 - - -, f 5;
+#X obj 268 -232 keyboardhelp;
+#X obj 290 -181 +;
+#X obj 814 23 envgen 200 140 1 0  ;
+#X obj 831 197 vline~;
+#X msg 1038 78 1 1000 \, 0 0 1000;
+#X obj 712 776 *~;
+#X obj 816 -38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 568 -4 duration 1000;
+#X msg 808 647 1;
+#X obj 656 838 freeverb~;
+#X obj 120 734 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7500 1;
+#X msg 120 767 wet \$1;
+#X obj 192 763 expr 1 - $f1;
+#X msg 301 831 dry \$1;
+#X msg 205 876 freeze 0;
+#X msg 328 872 freeze 1;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array array3 100 float 3;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 100 -1 200 140 1;
+#X restore 511 -199 graph;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 2 0 4 0;
+#X connect 3 0 4 0;
+#X connect 4 0 14 0;
+#X connect 5 0 8 0;
+#X connect 5 0 9 0;
+#X connect 5 0 15 0;
+#X connect 6 0 0 0;
+#X connect 7 0 10 1;
+#X connect 9 0 10 0;
+#X connect 9 1 7 0;
+#X connect 10 0 6 0;
+#X connect 11 0 12 0;
+#X connect 12 0 14 1;
+#X connect 14 0 18 0;
+#X connect 14 0 18 1;
+#X connect 15 0 11 0;
+#X connect 16 0 11 0;
+#X connect 17 0 14 1;
+#X connect 18 0 1 0;
+#X connect 18 1 1 1;
+#X connect 19 0 20 0;
+#X connect 19 0 21 0;
+#X connect 20 0 18 0;
+#X connect 21 0 22 0;
+#X connect 22 0 18 0;
+#X connect 23 0 18 0;
+#X connect 24 0 18 0;

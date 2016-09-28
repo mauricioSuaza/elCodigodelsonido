@@ -1,0 +1,7 @@
+#N canvas 426 174 925 412 10;
+#X obj 304 108 midirealtimein;
+#X floatatom 302 155 5 0 0 0 - - -, f 5;
+#X obj 479 113 midiclkin;
+#X floatatom 476 142 5 0 0 0 - - -, f 5;
+#X connect 0 0 1 0;
+#X connect 2 0 3 0;

@@ -1,0 +1,19 @@
+#N canvas 139 68 773 362 10;
+#X obj 306 81 osc~;
+#X obj 366 83 phasor~;
+#X obj 451 83 phasor~;
+#X obj 311 177 *~;
+#X obj 380 178 *~;
+#X obj 455 177 *~, f 4;
+#X obj 452 120 expr~ $v1 > 0.5;
+#X floatatom 368 23 5 0 0 0 - - -, f 5;
+#X obj 51 58 vradio 15 1 0 3 empty empty empty 0 -8 0 10 -258113 -1
+-1 0;
+#X text 144 212;
+#X connect 0 0 3 0;
+#X connect 1 0 4 0;
+#X connect 2 0 6 0;
+#X connect 6 0 5 0;
+#X connect 7 0 0 0;
+#X connect 7 0 1 0;
+#X connect 7 0 2 0;

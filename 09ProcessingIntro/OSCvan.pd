@@ -1,0 +1,5 @@
+#N canvas 824 139 641 320 10;
+#X obj 17 53 dumpOSC 9998;
+#X obj 134 42 dumpOSC 9000;
+#X obj 86 109 OSCroute /test /ix /yps;
+#X obj 117 171 OSCroute /f;

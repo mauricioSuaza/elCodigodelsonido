@@ -1,0 +1,30 @@
+#N canvas 516 84 741 444 16;
+#X text 49 43 Expresion;
+#X obj 50 112 expr (5*(5 * 5)/3);
+#X floatatom 56 150 5 0 0 0 - - -, f 5;
+#X obj 51 74 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 52 275 5 0 0 0 - - -, f 5;
+#X obj 46 237 expr ($f1*(5 * 5)/$f2);
+#X floatatom 60 199 5 0 0 0 - - -, f 5;
+#X floatatom 240 189 5 0 0 0 - - -, f 5;
+#X obj 346 98 moses 10;
+#X floatatom 344 60 5 0 0 0 - - -, f 5;
+#X floatatom 348 154 5 0 0 0 - - -, f 5;
+#X floatatom 425 155 5 0 0 0 - - -, f 5;
+#X floatatom 356 224 5 0 0 0 - - -, f 5;
+#X obj 354 261 sel 5;
+#X obj 352 304 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 410 304 5 0 0 0 - - -, f 5;
+#X connect 1 0 2 0;
+#X connect 3 0 1 0;
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;
+#X connect 7 0 5 1;
+#X connect 8 0 10 0;
+#X connect 8 1 11 0;
+#X connect 9 0 8 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 13 1 15 0;
